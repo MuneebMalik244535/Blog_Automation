@@ -162,5 +162,5 @@ def test_supabase():
         }
 
 @app.get("/")
-def root():
-    return {"message": "Blog Generation API with Groq", "model": GROQ_MODEL}
+def read_root():
+    return {"status": "healthy", "message": "Blog API is running"}
